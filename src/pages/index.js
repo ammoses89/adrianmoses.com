@@ -1,57 +1,61 @@
 import React from "react"
 import styled from 'styled-components'
 
+import AM from '../../static/images/AM.png'
+
 import "../../static/css/index.css"
 
-const Title = styled.h1`
-    font-size: 3.5em;
-    text-align: center;
-    color: #2F4858;
-`;
-
 const Main = styled.div`
-    padding: 5px;
+    padding: 24px;
     height: 100vh;
-    background-color: #86BBD8;
     width: 100%;
 `;
 
-const Section = styled.div`
+const Header = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 40%;
+    justify-content: flex-start;
 `;
 
 const LinkList = styled.ul`
-    color: #2F4858;
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-top: 200px; 
 `;
 
 const LinkItem = styled.li`
     margin-left: 5px;
     margin-right: 10px;
+    margin-bottom: 60px;
     font-size: 1.5em;
 `
 
 const Anchor = styled.a`
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
+    font-size: 48px;
+    font-weight: 700;
 `;
+
+const Image = styled.img`
+    height: 48px;
+    weight: 48px;
+`
 
 export default () => (
     <Main>
-        <Section>
-            <Title>Adrian Moses</Title>
-        </Section>
+        <Header>
+            <Image src={AM} />
+        </Header>
         <LinkList>
             <LinkItem>
-                <Anchor href="//thrust.fm">thrust.fm</Anchor>
+                <Anchor href="//thrust.fm">I build things like this.</Anchor>
             </LinkItem>
             <LinkItem>
-                <Anchor href="//marsmoses.com">marsmoses.com</Anchor>
+                <Anchor href="//marsmoses.com">I upload music here.</Anchor>
             </LinkItem>
         </LinkList>
     </Main>
