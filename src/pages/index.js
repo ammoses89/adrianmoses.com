@@ -1,9 +1,17 @@
 import React from "react"
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 import AM from '../../static/images/AM.png'
 
-import "../../static/css/index.css"
+const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css?family=Cantarell:400,400i,700,700i');
+
+    body {
+        font-family: 'Cantarell', sans-serif;
+        color: #333333;
+        background: #fefefe;
+    }
+`
 
 const Main = styled.div`
     padding: 24px;
@@ -46,17 +54,20 @@ const Image = styled.img`
 `
 
 export default () => (
-    <Main>
-        <Header>
-            <Image src={AM} />
-        </Header>
-        <LinkList>
-            <LinkItem>
-                <Anchor href="//thrust.fm">I build things like this.</Anchor>
-            </LinkItem>
-            <LinkItem>
-                <Anchor href="//marsmoses.com">I upload music here.</Anchor>
-            </LinkItem>
-        </LinkList>
-    </Main>
+    <>
+        <GlobalStyle />
+        <Main>
+            <Header>
+                <Image src={AM} />
+            </Header>
+            <LinkList>
+                <LinkItem>
+                    <Anchor href="//thrust.fm">I build things like this.</Anchor>
+                </LinkItem>
+                <LinkItem>
+                    <Anchor href="//marsmoses.com">I upload music here.</Anchor>
+                </LinkItem>
+            </LinkList>
+        </Main>
+    </>
 )
