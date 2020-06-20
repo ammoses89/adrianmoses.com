@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://adrianmoses.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Blog by Adrian Moses',
+  subtitle: 'Engineer sharing thoughts and lessons on Design, Web Developlement, Machine Learning, and Leadership',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -25,19 +25,16 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Adrian Moses',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Engineer sharing thoughts and lessons on Design, Web Developlement, Machine Learning, and Leadership',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'adrian@adrianmoses.com',
+      twitter: 'marsmoses',
+      github: 'ammoses89',
       rss: '',
-      vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'adrian-moses',
+      instagram: 'marsmoses',
       line: '',
       gitlab: '',
       weibo: '',
